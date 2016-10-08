@@ -1,0 +1,52 @@
+## ch.09 ##
+
+class Language
+    def setName(name)
+        @name = name
+    end
+    
+    def setCreator(creator)
+        @creator = creator
+    end
+end
+
+class main
+    lang = Language.new()
+    lang.setName("testName")
+    lang.setCreator("testCreator")
+    lang.description()
+
+## ch.10 ##
+
+class Circle
+    @PI = 3.14159
+    @radius
+    
+    def Circle(r)
+        @radius = r
+    end
+    
+    def setRadius(r)
+        @radius = r
+    end
+    
+    def getRadius
+        return @radius
+    end
+    
+    def getArea
+        return @PI * @radius * @radius
+    end
+    
+    def getCircumference
+        return 2 * @PI * @radius
+    end
+end
+
+class main
+    circle = Circle.new(10)
+    p "Area is #{circle.getArea}"
+    p "Diameter is #{circle.getRadius}"
+    p "Circumference is #{circle.getCircumference}"
+end
+    
